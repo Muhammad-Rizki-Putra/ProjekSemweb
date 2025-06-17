@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KamusController;
 use Livewire\Volt\Volt;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', [KamusController::class, 'index'])->name('home');
+Route::post('/search', [KamusController::class, 'search']);
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

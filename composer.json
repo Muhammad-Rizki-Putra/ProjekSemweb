@@ -1,0 +1,19 @@
+{
+    "name": "rizki/projek-akhir-semweb",
+    "autoload": {
+        "psr-4": {
+            "Rizki\\ProjekAkhirSemweb\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Muhammad-Rizki-Putra",
+            "email": "muhammad22517@mail.unpad.ac.id"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "dev": "php -S localhost:8000 -t public/", 
+        "another-script": "echo 'Contoh skrip lain'" 
+    }
+}
